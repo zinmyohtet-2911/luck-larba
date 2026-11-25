@@ -1,0 +1,111 @@
+.header-container {
+  width: 100%;
+  background-color: #ffffff;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px 24px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.header-logo {
+  width: 48px;
+  height: 48px;
+  object-fit: cover;
+  border-radius:10%;
+}
+
+.header-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #333333;
+  margin: 0;
+  letter-spacing: 0.5px;
+}
+
+/* Responsive - mobile */
+@media (max-width: 600px) {
+  .header {
+    padding: 10px 16px;
+    gap: 8px;
+  }
+
+  .header-logo {
+    width: 36px;
+    height: 36px;
+  }
+
+  .header-title {
+    font-size: 1.2rem;
+  }
+}
+
+.exchange-container {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  max-width: 400px;
+  margin: 24px auto;
+  padding: 24px;
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.exchange-field {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.exchange-label {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #444444;
+}
+
+.exchange-input {
+  width: 100%;
+  padding: 10px 12px;
+  font-size: 1rem;
+  color: #333333;
+  border: 1px solid #cccccc;
+  border-radius: 8px;
+  outline: none;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+  box-sizing: border-box;
+}
+
+.exchange-input:focus {
+  border-color: #4a90e2;
+  box-shadow: 0 0 0 3px rgba(74, 144, 226, 0.2);
+}
+
+/* number input ရဲ့ arrow (spinner) ဖျောက်ချင်ရင် */
+.exchange-input::-webkit-outer-spin-button,
+.exchange-input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.exchange-input[type="number"] {
+  -moz-appearance: textfield;
+  appearance: textfield;
+}
+
+/* Responsive - mobile */
+@media (max-width: 480px) {
+  .exchange-container {
+    margin: 16px;
+    padding: 16px;
+  }
+
+  .exchange-input {
+    font-size: 0.95rem;
+  }
+}
